@@ -22,16 +22,16 @@ namespace osrs {
         fn_get_varb_definition get_varb_definition = nullptr;
     	void init_offsets(uintptr_t base)
     	{
-            worldtoscreen = (fn_world_to_screen)(base + 0x7c900);
-            get_object_definition = (fn_get_object_definition)(base + 0xe23a0);
-            fix_object_definition = (fn_fix_object_definition)(base + 0xe4840);
-            fix_npc_definition = (fn_fix_npc_definition)(base + 0xeca20);
-            get_item_definition = (fn_get_item_definition)(base + 0xecf80);
-            render_scene = (fn_render_scene)(base + 0x60f40);
-            doaction = (fn_do_action)(base + 0x6bdf0);
-            print_chat = (fn_print_chat)(base + 0x54770);
-            projectiles = (fn_projectiles)(base + 0x93e50);
-            get_varb_definition = (fn_get_varb_definition)(base + 0xf2ed0);
+            worldtoscreen = (fn_world_to_screen)(base + 0x7d4c0);
+            get_object_definition = (fn_get_object_definition)(base + 0xfc0a0);
+            fix_object_definition = (fn_fix_object_definition)(base + 0xfe540);
+            fix_npc_definition = (fn_fix_npc_definition)(base + 0xdcce0);
+            get_item_definition = (fn_get_item_definition)(base + 0xdd240);
+            render_scene = (fn_render_scene)(base + 0x617f0);
+            doaction = (fn_do_action)(base + 0x6c8e0);
+            print_chat = (fn_print_chat)(base + 0x54c80);
+            projectiles = (fn_projectiles)(base + 0x95110);
+            get_varb_definition = (fn_get_varb_definition)(base + 0xe3190);
     	}
     }
 	
@@ -76,28 +76,28 @@ namespace osrs {
         uintptr_t window_hook = 0;
     	void init_offsets(uintptr_t base)
     	{
-            player_list = base + 0x1b31520;
-            player_indices = base + 0x5bcb00;
-            player_count = base + 0x5b4af8;
-            local_player = base + 0x1b39528;
-            npc_list = base + 0x1b3c7c0;
-            npc_indices = base + 0x1bbc7d0;
-            npc_count = base + 0x5c04e0;
-            interface_list = base + 0x1cd3a18;
-            scene = base + 0x1bbc7d8;
-            ground_item_list = base + 0x1bbc7e0;
-            mouseover = base + 0x5cc6e8;
-            varbit_mask = base + 0x384f80;
-            varp_array = base + 0x1cd2968;
-            login_state = base + 0x5c05ac;
-            game_state = base + 0x490d88;
-            w2s_result_x = base + 0x490d08;
-            w2s_result_y = base + 0x490d0c;
-            tileflags = base + 0x203bfa8;
-            res_x = base + 0x5c03e0;
-            res_y = base + 0x5c03dc;
-            item_containers = base + 0x1781d50;
-            window_hook = base + 0x177acb0;
+            player_list = base+0x1b367a0;
+            player_indices = base+0x5bfbc0;
+            player_count = base+0x5b7bb8;
+            local_player = base+0x1b3e7a8;
+            npc_list = base+0x1b41a30;
+            npc_indices = base+0x1bc1a40;
+            npc_count = base+0x5c35a8;
+            interface_list = base+0x2037d88;
+            scene = base+0x1bc1a48;
+            ground_item_list = base+0x1bc1a50;
+            mouseover = base+0x5ced20;
+            varbit_mask = base+0x386fc0;
+            varp_array = base+0x2037d60;
+            login_state = base+0x5cdf74;
+            game_state = base+0x493d88;
+            w2s_result_x = base+0x493d08;
+            w2s_result_y = base+0x493d0c;
+            tileflags = base+0x2041220;
+            res_x = base+0x5c34a8;
+            res_y = base+0x5c34a4;
+            item_containers = base+0x1784390;
+            window_hook = base+0x177d2e8;
     	}
     }
 }
