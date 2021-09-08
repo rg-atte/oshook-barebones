@@ -322,20 +322,6 @@ void hook_renderscene(void* param_1, uintptr_t param_2, uintptr_t param_3, uint3
         }
     }
     auto iface = reinterpret_cast<osrs::interface_list*>(osrs::offsets::interface_list);
-	//something such as this would be against jagex tos so its commented out
-    //osrs::functions::doaction(-1, osrs::INTERFACE_QUICK_PRAYER, osrs::ACTION_INTERFACE_INTERACT, 1, 1, 0, 0, 0, iface->get_interface_address(osrs::INTERFACE_QUICK_PRAYER));
-	//interface actions need last parameter to be a pointer to the interface or component in case of stuff like exit buttons
-	//so something like this
-    //if (action_id == osrs::ACTION_INTERFACE_INTERACT) {
-    //    if (pos_1 != -1)
-    //        interface_ptr = iface->get_interface(pos_2)->get_component_address(pos_1);
-    //    else
-    //        interface_ptr = iface->get_interface_address(pos_2);
-    //}
-	//for something like attacking an npc it would be
-	//osrs::functions::doaction(npc->position_x >> 7, npc->position_y >> 7, osrs::ACTION_ATTACK,npc_index, 1, 0, 0, 0, 0);
-	//but once again this is not allowed, do not do this
-
 	
     PLH::FnCast(renderscene_tramp, osrs::functions::fn_render_scene())(param_1, param_2, param_3, param_4,
         param_5, param_6, param_7, param_8);
