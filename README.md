@@ -13,7 +13,6 @@ depends on [Polyhook 2.0 by stevemk14ebr](https://github.com/stevemk14ebr/PolyHo
 
 what's included:
 - world to screen
-- performing game actions such as attacking monsters, interacting with interfaces etc.
 - NPC, Player, Ground item and world object iteration
 - getting correct definitions for those things
 - iterating item containers such as inventories, banks or stores
